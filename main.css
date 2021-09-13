@@ -22,5 +22,12 @@
       }
       .command{
         margin: 30px;
+        font-family: arial;
+      }
+      .doc{
+        font-family: arial;
+      }
+      .blog{
+        font-family: arial;
       }
       
