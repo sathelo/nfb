@@ -21,13 +21,21 @@
        margin: 30px;
       }
       .command{
-        margin: 30px;
         font-family: arial;
+        color: #ffffff80;
       }
       .doc{
         font-family: arial;
+        color: #ffffff80;
       }
       .blog{
         font-family: arial;
+        color: #ffffff80;
+      }
+      .a{
+        margin: 30px;
+      }
+      .a:hovard{
+      color: #ffffff;
       }
       
