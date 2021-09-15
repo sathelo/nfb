@@ -50,6 +50,7 @@ img {
 .command {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   width: 100px;
   height: 30px;
@@ -60,6 +61,7 @@ img {
 .doc {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   width: 140px;
   height: 30px;
@@ -70,6 +72,7 @@ img {
 .blog {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   width: 80px;
   height: 30px;
@@ -77,11 +80,31 @@ img {
   margin-left: 35px;
 }
 
+.add_bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 30px;
+
+  margin: 0 35px 0 35px;
+  background: red;
+}
+
 a {
   color: antiquewhite;
   text-decoration: none;
+
+  transition: 0.5s;
 }
 
 a:hover {
+  color: #80786E;
+
   cursor: pointer;
+}
+
+a:active {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
