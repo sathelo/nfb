@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -21,6 +22,7 @@ body {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   height: 100px;
+  max-height: 100px;
   width: 100%;
 
   background-color: #3d4247;
@@ -29,22 +31,23 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   color: antiquewhite;
   border: 1px solid #A52A2A;
-  border-radius: 50%;
+  border-radius: 40px 40px;
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), 1px 1px 5px rgb(139, 48, 48);
   overflow: hidden;
 
-  width: 75px;
+  min-width: 75px;
   height: 75px;
 
   margin-left: 35px;
 }
 
 img {
-  max-height: 100px;
-  overflow: hidden;
+  max-width: 75px;
+  object-fit: cover;
 }
 
 .command {
@@ -58,6 +61,10 @@ img {
   margin-left: 35px;
 }
 
+.command a {
+  width: 100px;
+}
+
 .doc {
   display: flex;
   align-items: center;
@@ -69,15 +76,33 @@ img {
   margin-left: 35px;
 }
 
+.doc a {
+  width: 140px;
+}
+
 .blog {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 80px;
+  width: 70px;
   height: 30px;
 
   margin-left: 35px;
+}
+
+.blog a {
+  width: 70px;
+}
+
+.end_block {
+  display: flex;
+  justify-content: flex-end;
+  
+  width: 100%;
+  height: 30px;
+
+  margin: 0 35px 0 35px;
 }
 
 .add_bot {
@@ -87,24 +112,27 @@ img {
 
   width: 200px;
   height: 30px;
+}
 
-  margin: 0 35px 0 35px;
-  background: red;
+.add_bot a {
+  width: 200px;
 }
 
 a {
-  color: antiquewhite;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
 
+  color: antiquewhite;
+  height: 30px;
+  
   transition: 0.5s;
+  
+  text-decoration: none;
+  outline: none;
 }
 
 a:hover {
   color: #80786E;
 
   cursor: pointer;
-}
-
-a:active {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
