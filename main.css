@@ -22,7 +22,6 @@ body {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   height: 100px;
-  max-height: 100px;
   width: 100%;
 
   background-color: #3d4247;
@@ -45,7 +44,7 @@ body {
   margin-left: 35px;
 }
 
-img {
+.logo img {
   max-width: 75px;
   object-fit: cover;
 }
@@ -136,3 +135,118 @@ a:hover {
 
   cursor: pointer;
 }
+
+.body {
+  font-size: 16px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  height: 1000px;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  height: 300px;
+}
+
+.title p {
+  color: antiquewhite;
+  font-size: 26px;
+}
+
+.commands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: antiquewhite;
+  overflow: hidden;
+  
+  height: 300px;
+  width: 100%;
+}
+
+.icon_one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px 5px;
+  overflow: hidden;
+
+  width: 180px;
+  height: 180px;
+
+  margin-left: 35px;
+}
+
+.icon_one img{
+  max-width: 180px;
+  object-fit: cover;
+}
+
+.about_one {
+  display: flex;
+
+  margin: 50px;
+
+  height: 100px;
+  width: 300px;
+}
+
+.about_one p {
+  color: antiquewhite;
+  font-size: 16px;
+}
+
+.documends {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: antiquewhite;
+  overflow: hidden;
+  
+  height: 300px;
+  width: 100%;
+}
+
+.icon_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px 5px;
+  overflow: hidden;
+
+  width: 180px;
+  height: 180px;
+
+  margin-left: 35px;
+  background: #000;
+}
+
+.icon_two img{
+  max-width: 180px;
+  object-fit: cover;
+}
+
+.about_two {
+  display: flex;
+
+  margin: 50px;
+
+  height: 100px;
+  width: 300px;
+}
+
+.about_two p {
+  color: antiquewhite;
+  font-size: 16px;
+}
+
