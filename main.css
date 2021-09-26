@@ -340,7 +340,7 @@ body {
   color: antiquewhite;
   overflow: hidden;
   
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 
@@ -352,18 +352,19 @@ body {
   border-radius: 5px 5px;
   overflow: hidden;
 
-  width: 180px;
-  height: 180px;
+  width: 360px;
+  height: 360px;
 
   margin-left: 35px;
 }
 
 .icon_one img {
-  max-width: 180px;
+  max-width: 360px;
   object-fit: cover;
 }
 
 .about_one {
+  flex-direction: column;
   display: flex;
 
   margin: 50px;
@@ -385,7 +386,7 @@ body {
   color: antiquewhite;
   overflow: hidden;
   
-  height: 300px;
+  height: 400px;
   width: 100%;
 }
 
@@ -397,19 +398,20 @@ body {
   border-radius: 5px 5px;
   overflow: hidden;
 
-  width: 180px;
-  height: 180px;
+  width: 360px;
+  height: 360px;
 
   margin-left: 35px;
   background: #000;
 }
 
 .icon_two img {
-  max-width: 180px;
+  max-width: 360px;
   object-fit: cover;
 }
 
 .about_two {
+  flex-direction: column;
   display: flex;
 
   margin: 50px;
