@@ -442,10 +442,6 @@ body {
   line-height: 25px;
 }
 
-.about_one .bottom_text p {
-  padding-left: 35px;
-}
-
 .block_commands {
   display: flex;
   align-items: center;
@@ -484,13 +480,63 @@ body {
 
   margin: 25px;
 
-  height: 100px;
-  width: 300px;
+  height: 260px;
+  width: 400px;
+  min-width: 360px;
 }
 
-.about_two p {
+.about_two .header_text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  width: 100%;
+  height: 40px;
+
+  color: var(--primary);
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+.about_two .fa-list {
+  display: block; 
+}
+
+.about_two .fa-list:hover {
+  animation: tremor 0.5s infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes tremor {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(0deg); }
+  20% { transform: rotate(0deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  60% { transform: rotate(3deg); }
+  70% { transform: rotate(-3deg); }
+  80% { transform: rotate(0deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.about_two .header_text p.heading {
+  width: 220px;
+  height: 40px;
+
+  margin-left: 10px;
+}
+
+.about_two .bottom_text {
+  width: 100%;
+  height: 100%;
+
   color: antiquewhite;
   font-size: 16px;
+  line-height: 25px;
 }
 
 .background_bottom {
