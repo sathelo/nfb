@@ -161,7 +161,7 @@ body {
   height: 1200px;
   width: 100%;
 
-  margin: 70px 0px 127.5px 0px;
+  margin: 70px 0px 250px 0px;
 }
 
 .title {
@@ -355,6 +355,8 @@ body {
   
   height: 400px;
   width: 100%;
+
+  margin-bottom: 30px;
 }
 
 .icon_one {
@@ -452,6 +454,8 @@ body {
   
   height: 400px;
   width: 100%;
+
+  margin-bottom: 30px;
 }
 
 .icon_two {
