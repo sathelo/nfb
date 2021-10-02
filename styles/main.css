@@ -44,7 +44,6 @@ body {
   color: antiquewhite;
   border-radius: 40px 40px;
   overflow: hidden;
-  opacity: 0.75;
   transition: 0.1s;
 
   min-width: 75px;
@@ -56,12 +55,6 @@ body {
 .logo img {
   max-width: 75px;
   object-fit: cover;
-}
-
-.logo:hover {
-  box-shadow: 0 0 500px 4px var(--primary);
-  transition: 0.1s;
-  opacity: 1;
 }
 
 .command {
@@ -407,7 +400,7 @@ body {
 }
 
 .about_one .fa-book:hover {
-  animation: tremor 0.5s infinite;
+  animation: tremor 1s infinite;
   animation-duration: 1s;
   animation-direction: alternate;
 }
@@ -506,7 +499,7 @@ body {
 }
 
 .about_two .fa-list:hover {
-  animation: tremor 0.5s infinite;
+  animation: tremor 1s infinite;
   animation-duration: 1s;
   animation-direction: alternate;
 }
@@ -563,7 +556,7 @@ body {
 
 .block_up .about_one_up {
   min-width: 570px;
-  height: 120px;
+  height: 100px;
 }
 
 .block_up .about_one_up p.text a {
@@ -600,7 +593,7 @@ body {
 
 .block_up .about_two_up {
   min-width: 200px;
-  height: 120px;
+  height: 100px;
   
   margin: 15px;
 }
@@ -635,7 +628,7 @@ body {
 
 .block_up .about_threes_up {
   min-width: 200px;
-  height: 120px;
+  height: 100px;
   
   margin: 15px;
 }
@@ -678,9 +671,6 @@ body {
 }
 
 .block_bottom .text_bottom {
-  display: flex;
-  align-items: center;
-
   font-size: small;
 
   width: 1030px;
