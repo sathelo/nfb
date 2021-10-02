@@ -27,7 +27,6 @@ body {
   justify-content: flex-start;
   align-items: center;
 
-  font-weight: bold;
   font-size: 16px;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -46,7 +45,7 @@ body {
   border-radius: 40px 40px;
   overflow: hidden;
   opacity: 0.75;
-  transition: 0.3s;
+  transition: 0.1s;
 
   min-width: 75px;
   height: 75px;
@@ -61,7 +60,7 @@ body {
 
 .logo:hover {
   box-shadow: 0 0 500px 4px var(--primary);
-  transition: 0.3s;
+  transition: 0.1s;
   opacity: 1;
 }
 
@@ -137,12 +136,11 @@ body {
   display: flex;
   align-items: center;
 
-  letter-spacing: 1px;
   gap: 5px;
-  color: #80786E;
+  color: hsla(0,0%,100%,.5);
   height: 30px;
   
-  transition: 0.3s;
+  transition: 0.1s;
   
   text-decoration: none;
   outline: none;
@@ -544,6 +542,10 @@ body {
 }
 
 .background_bottom {
+  color: antiquewhite;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+
   width: 100%;
   height: 200px;
 
@@ -562,25 +564,108 @@ body {
 .block_up .about_one_up {
   min-width: 570px;
   height: 120px;
+}
+
+.block_up .about_one_up p.text a {
+  color: antiquewhite;
   
-  background: #000;
-  margin: 15px;
+  transition: 0.1s;
+
+  text-decoration: none;
+  outline: none;
+}
+
+.block_up .about_one_up p.text a:hover {
+  color: hsla(0,0%,100%,.5);
+}
+
+.block_up .about_one_up p.head {
+  display: flex;
+  align-items: center;
+
+  color: antiquewhite;
+  font-size: 28px;
+  font-weight: bold;
+
+  width: 100%;
+  height: 40px;
+}
+
+.block_up .about_one_up p.text {
+  width: 100%;
+  height: 25px;
+
+  line-height: 20px;
 }
 
 .block_up .about_two_up {
   min-width: 200px;
   height: 120px;
   
-  background: red;
   margin: 15px;
+}
+
+.block_up .about_two_up p.head {
+  display: flex;
+  align-items: center;
+
+  color: antiquewhite;
+  font-weight: 600;
+
+  height: 30px;
+  margin-top: 5px;
+}
+
+.block_up .about_two_up p.text {
+  line-height: 20px;
+}
+
+.block_up .about_two_up a {
+  color: antiquewhite;
+  
+  transition: 0.1s;
+
+  text-decoration: none;
+  outline: none;
+}
+
+.block_up .about_two_up a:hover {
+  color: hsla(0,0%,100%,.5);
 }
 
 .block_up .about_threes_up {
   min-width: 200px;
   height: 120px;
-
-  background: orange;
+  
   margin: 15px;
+}
+
+.block_up .about_threes_up p.head {
+  display: flex;
+  align-items: center;
+
+  color: antiquewhite;
+  font-weight: 600;
+
+  height: 30px;
+  margin-top: 5px;
+}
+
+.block_up .about_threes_up p.text {
+  line-height: 20px;
+}
+
+.block_up .about_threes_up a {
+  color: antiquewhite;
+  
+  transition: 0.1s;
+
+  text-decoration: none;
+  outline: none;
+}
+
+.block_up .about_threes_up a:hover {
+  color: hsla(0,0%,100%,.5);
 }
 
 .background_bottom .block_bottom {
@@ -593,8 +678,11 @@ body {
 }
 
 .block_bottom .text_bottom {
+  display: flex;
+  align-items: center;
+
+  font-size: small;
+
   width: 1030px;
   height: 35px;
-
-  background: gold;
 }
