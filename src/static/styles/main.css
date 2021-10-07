@@ -32,6 +32,7 @@ a {
 
 /* Шапка сайта */
 .header {
+  position: sticky;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -42,6 +43,7 @@ a {
 
   height: 100px;
   width: 100%;
+  top: 0px;
 
   background-color: #2c2f33;
 }
