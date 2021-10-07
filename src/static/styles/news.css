@@ -50,14 +50,14 @@
   max-height: 800px;
 }
 
-.body .blocks_information .block_head_information {
+.body .block_head_information {
   min-width: 800px;
   height: 740px;
 
   margin: 60px 25px 0px 200px;
 }
 
-.body .blocks_information .block_head_information .block_information {
+.body .block_head_information .block_information {
   width: 800px;
   height: 200px;
 
@@ -67,12 +67,12 @@
   background: #44484f;
 }
 
-.body .blocks_information .block_head_information .text_information {
+.body .text_information {
   width: 100%;
   height: 100%;
 }
 
-.body .blocks_information .block_head_information .text_head {
+.body .text_information .text_head {
   display: flex;
   flex-direction: row;
 
@@ -82,7 +82,7 @@
   margin-bottom: 20px;
 }
 
-.body .blocks_information .block_head_information .text_head_left {
+.body .text_information .text_head_left {
   display: flex;
   align-items: flex-end;
   justify-content: left;
@@ -107,7 +107,7 @@
   margin-left: 35px;
 }
 
-.body .blocks_information .block_head_information .text_head_right {
+.body .block_head_information .text_head_right {
   display: flex;
   align-items: flex-end;
   justify-content: right;
@@ -117,21 +117,21 @@
   height: 40px;
 }
 
-.body .blocks_information .block_head_right {
+.body .block_head_right {
   width: 400px;
   height: 740px;
 
-  margin: 60px 0px 0px 0px;
+  margin-top: 60px;
 }
 
-.body .blocks_information .block_head_right .block_information {
+.body .block_head_right .block_information {
   position: sticky;
 
   min-width: 400px;
   height: 200px;
   top: 100px;
 
-  margin: 15px 0px;
+  margin: 15px 0px 95px 0px;
   padding: 15px;
 
   background: #44484f;
