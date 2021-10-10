@@ -1,13 +1,25 @@
 .body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 100%;
-  height: 800px;
+  height: 600px;
+
+  margin: 100px 0px;
+  padding: 0px;
+}
+
+.body .title {
+  width: 100%;
+  height: 50px;
 
   margin: 0px;
   padding: 0px;
+}
+
+.body .title p.head {
+  font-weight: bold;
+  font-size: 28px;
+
+  width: 200px;
+  height: 50px;
 }
 
 .body .blocks_information {
@@ -24,12 +36,15 @@
   align-items: flex-start;
   justify-content: center;
 
-  min-width: 325px;
-  height: 600px;
+  min-width: 290px;
+  height: 430px;
 
   margin: 0px 30px;
 
   perspective: 500px;
+
+  transition-duration: 0.5s;
+  opacity: 0.6;
 }
 
 .block .contact {
@@ -37,8 +52,8 @@
   align-items: flex-end;
   justify-content: center;
 
-  width: 325px;
-  height: 500px;
+  width: 240px;
+  height: 360px;
 
   border: 10px solid antiquewhite;
   box-shadow: 0px 3px 10px hsla(0, 0%, 100%, 0.5);
@@ -48,7 +63,8 @@
   transform-style: preserve-3d;
 
   background: hsla(0, 0%, 100%, 0.5);
-  opacity: 0.8;
+
+  margin-top: 10px;
 }
 
 .block .contact img {
@@ -64,8 +80,8 @@
 
   border: 10px solid antiquewhite;
 
-  width: 260px;
-  height: 260px;
+  width: 170px;
+  height: 170px;
 
   box-shadow: 0px 20px 40px antiquewhite;
   transform: translateZ(30px) translateX(30px) translateY(-30px);
@@ -75,24 +91,24 @@
   margin: 0px 0px 0px -55px;
 
   background: hsla(0, 0%, 100%, 0.5);
-  opacity: 0.8;
 }
 
-.block .contact:hover {
+.blocks_information .block:hover {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.blocks_information .block:hover .contact {
   box-shadow: 0px 5px 10px antiquewhite;
 
   transform: rotateY(0deg) translateX(10px);
   transition-duration: 0.5s;
-
-  opacity: 1;
 }
 
-.block .contact:hover .block_inside {
+.blocks_information .block:hover .block_inside {
   box-shadow: 0px 5px 10px antiquewhite;
 
   transform: translateZ(30px);
-
-  opacity: 1;
 
   margin: 0px 0px 0px 0px;
 }
