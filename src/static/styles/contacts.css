@@ -15,8 +15,9 @@
 }
 
 .body .title p.head {
-  font-weight: bold;
   font-size: 28px;
+  font-weight: normal;
+  color: var(--primary);
 
   width: 200px;
   height: 50px;
@@ -55,8 +56,8 @@
   width: 240px;
   height: 360px;
 
-  border: 10px solid antiquewhite;
-  box-shadow: 0px 3px 10px hsla(0, 0%, 100%, 0.5);
+  border: 5px solid antiquewhite;
+  box-shadow: 0px 3px 10px var(--primary);
 
   transform: rotateY(20deg) rotateX(5deg);
   transition-duration: 0.5s;
@@ -78,19 +79,46 @@
   position: absolute;
   bottom: -70px;
 
-  border: 10px solid antiquewhite;
+  border: 3px solid antiquewhite;
 
   width: 170px;
   height: 170px;
 
-  box-shadow: 0px 20px 40px antiquewhite;
+  box-shadow: 0px 20px 40px var(--primary);
   transform: translateZ(30px) translateX(30px) translateY(-30px);
   transition-duration: 0.5s;
 
   padding: 20px;
   margin: 0px 0px 0px -55px;
 
-  background: hsla(0, 0%, 100%, 0.5);
+  background: hsla(0, 0%, 50%, 0.5);
+}
+
+.block .block_inside p.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 28px;
+
+  width: 100%;
+  height: 50px;
+}
+
+.block .block_inside a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: antiquewhite;
+  font-size: 18px;
+
+  width: 100%;
+  height: 50px;
+
+  text-decoration: none;
+  outline: none;
 }
 
 .blocks_information .block:hover {
@@ -99,16 +127,26 @@
 }
 
 .blocks_information .block:hover .contact {
-  box-shadow: 0px 5px 10px antiquewhite;
+  box-shadow: 0px 5px 10px hsla(0, 0%, 100%, 0.5);
+  border: 5px solid antiquewhite;
 
   transform: rotateY(0deg) translateX(10px);
   transition-duration: 0.5s;
 }
 
 .blocks_information .block:hover .block_inside {
-  box-shadow: 0px 5px 10px antiquewhite;
+  box-shadow: 0px 5px 10px hsla(0, 0%, 100%, 0.5);
+  border: 3px solid antiquewhite;
+
+  color: antiquewhite;
 
   transform: translateZ(30px);
 
+  background: hsla(0, 0%, 100%, 0.5);
+
   margin: 0px 0px 0px 0px;
+}
+
+.blocks_information .block:hover .block_inside a {
+  color: antiquewhite;
 }
