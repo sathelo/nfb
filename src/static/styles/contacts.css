@@ -1,0 +1,154 @@
+.body {
+  width: 100%;
+  height: 600px;
+
+  margin: 100px 0px;
+  padding: 0px;
+}
+
+.body .title {
+  width: 100%;
+  height: 50px;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.body .title p.head {
+  font-size: 28px;
+  font-weight: normal;
+  color: var(--primary);
+
+  width: 200px;
+  height: 50px;
+}
+
+.body .blocks_information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 600px;
+}
+
+.blocks_information .block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  min-width: 290px;
+  height: 430px;
+
+  margin: 0px 30px;
+
+  perspective: 500px;
+
+  transition-duration: 0.5s;
+  opacity: 0.6;
+}
+
+.block .contact {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  width: 240px;
+  height: 360px;
+
+  border: 5px solid antiquewhite;
+  box-shadow: 0px 3px 10px var(--primary);
+
+  transform: rotateY(20deg) rotateX(5deg);
+  transition-duration: 0.5s;
+  transform-style: preserve-3d;
+
+  background: hsla(0, 0%, 100%, 0.5);
+
+  margin-top: 10px;
+}
+
+.block .contact img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.block .block_inside {
+  position: absolute;
+  bottom: -70px;
+
+  border: 3px solid antiquewhite;
+
+  width: 170px;
+  height: 170px;
+
+  box-shadow: 0px 20px 40px var(--primary);
+  transform: translateZ(30px) translateX(30px) translateY(-30px);
+  transition-duration: 0.5s;
+
+  padding: 20px;
+  margin: 0px 0px 0px -55px;
+
+  background: hsla(0, 0%, 50%, 0.5);
+}
+
+.block .block_inside p.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 28px;
+
+  width: 100%;
+  height: 50%;
+}
+
+.block .block_inside a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: antiquewhite;
+  font-size: 28px;
+  font-weight: bold;
+
+  width: 100%;
+  height: 50%;
+
+  text-decoration: none;
+  outline: none;
+}
+
+.blocks_information .block:hover {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.blocks_information .block:hover .contact {
+  box-shadow: 0px 5px 10px #25282b;
+  border: 5px solid antiquewhite;
+
+  transform: rotateY(0deg) translateX(10px);
+  transition-duration: 0.5s;
+}
+
+.blocks_information .block:hover .block_inside {
+  box-shadow: 0px 5px 10px #25282b;
+  border: 3px solid antiquewhite;
+
+  color: #25282b;
+
+  transform: translateZ(30px);
+
+  background: hsla(0, 0%, 100%, 0.5);
+
+  margin: 0px 0px 0px 0px;
+}
+
+.blocks_information .block:hover .block_inside a {
+  color: #25282b;
+  opacity: 0.5;
+}
