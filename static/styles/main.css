@@ -344,6 +344,42 @@ a {
   margin-top: 100px;
 }
 
+.body_block {
+  position: relative;
+}
+
+.body_block::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  left: 0%;
+  border-radius: 100%;
+
+  background-color: var(--primary);
+  opacity: 0.2;
+  z-index: -1;
+  animation: scaler 15s ease-in-out infinite;
+}
+
+.body_block:last-child:after {
+  left: 65%;
+  animation-delay: 2s;
+  animation-duration: 20s;
+}
+
+@keyframes scaler {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+}
+
 .body .blocs_information .body_block {
   display: flex;
   align-items: center;
