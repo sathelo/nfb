@@ -4,24 +4,22 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  width: 100%;
-  height: 800px;
+  padding: 0px 15px;
 
-  margin: 100px 0px;
-  padding: 0px;
+  width: 100%;
 }
 
 .body .title {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
 
   width: 100%;
   height: 50px;
 
   margin: 0px;
-  padding: 0px;
+  padding: 40px 0px;
 }
 
 .body .title p.head {
@@ -31,7 +29,6 @@
   font-size: 28px;
   color: var(--primary);
 
-  width: 200px;
   height: 50px;
 
   margin-left: 8px;
@@ -42,7 +39,6 @@
   align-items: center;
   justify-content: flex-end;
 
-  width: 200px;
   height: 50px;
 
   color: var(--primary);
@@ -52,28 +48,28 @@
 
 .body .blocks_information {
   display: flex;
-  align-items: center;
   justify-content: center;
 
   width: 100%;
-  max-height: 800px;
+  gap: 15px;
+
+  margin-bottom: 15px;
 }
 
 .body .block_head_information {
-  min-width: 800px;
-  height: 740px;
-
-  margin: 60px 25px 0px 200px;
+  width: 100%;
 }
 
 .body .block_head_information .block_information {
-  width: 800px;
   height: 200px;
 
-  margin: 15px 0px;
   padding: 10px;
 
   background: #44484f;
+}
+
+.body .block_head_information .block_information:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .body .text_information {
@@ -96,8 +92,8 @@
   align-items: flex-end;
   justify-content: left;
 
+  color: var(--primary);
   font-size: 28px;
-  font-weight: 600;
 
   width: 50%;
   height: 40px;
@@ -109,7 +105,7 @@
 }
 
 .body .text_information .text_bottom p.head {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .body .text_information .text_bottom ul.text {
@@ -118,7 +114,6 @@
 
 .body .block_head_information .text_head_right {
   display: flex;
-  align-items: flex-end;
   justify-content: right;
 
   font-size: small;
@@ -128,9 +123,6 @@
 
 .body .block_head_right {
   width: 400px;
-  height: 740px;
-
-  margin-top: 60px;
 }
 
 .body .block_head_right .block_information {
@@ -140,15 +132,11 @@
   height: 200px;
   top: 100px;
 
-  margin: 15px 0px 95px 0px;
-  padding: 15px;
+  padding: 10px;
 
   background: #44484f;
 }
 
 .body .block_head_right .text_head p {
   font-size: 28px;
-  font-weight: 600;
-
-  margin-bottom: 15px;
 }
