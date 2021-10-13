@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<title>Website</title>
+<link rel="stylesheet" type="text/css" href="./static/styles/main.css" />
+<link
+  rel="stylesheet"
+  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+  crossorigin="anonymous"
+/>
+<link rel="icon" type="image/ico" href="./favicon.ico" />
+<script defer src="./static/scripts/main.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Шапка сайта -->
+    <div class="header">
+  <div class="logo">
+    <a href="./" title="Домой">
+      <img src="./static/images/photo_logo.png" alt="Лого" />
+    </a>
+  </div>
+  <div class="button command">
+    <a href="./#scroll_commands">
+      <i class="fas fa-list"></i>
+      <p class="text" title="Команды">Команды</p>
+    </a>
+  </div>
+  <div class="button doc">
+    <a href="./#scroll_documentation">
+      <i class="fas fa-book"></i>
+      <p class="text" title="Документация">Документация</p>
+    </a>
+  </div>
+  <div class="button news">
+    <a href="./news.html">
+      <i class="fas fa-stream"></i>
+      <p class="text" title="Новости">Новости</p>
+    </a>
+  </div>
+  <div class="button end_block">
+    <div class="button add_bot">
+      <a
+        href="https://discord.com/api/oauth2/authorize?client_id=877243621299064902&permissions=8&scope=bot"
+        title="Добавить бота на сервер"
+        target="_blank"
+      >
+        Добавить бота на сервер
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Тело сайта -->
+    <div class="body">
+      <div class="title">
+        <canvas id="canvas"></canvas>
+        <p class="head">
+          Normalfaggotbot - лучший бесплатный<br />музыкальный бот для Discord
+        </p>
+        <a
+          href="https://discord.com/api/oauth2/authorize?client_id=877243621299064902&permissions=8&scope=bot"
+          class="button"
+          target="_blank"
+        >
+          <i class="fab fa-discord"></i>
+          <p class="button_text">Добавить на свой сервер Discord</p>
+        </a>
+      </div>
+
+      <div class="blocs_information">
+        <div class="body_block" id="scroll_documentation">
+          <div class="video">
+            <video
+              controls
+              autoplay
+              loop
+              muted
+              src="./static/video/banner_block_one.mp4"
+              type="video/mp4"
+            ></video>
+          </div>
+          <div class="about_block">
+            <div class="header_text">
+              <i class="fas fa-book"></i>
+              <p class="heading">Документация</p>
+            </div>
+            <div class="bottom_text">
+              <p>
+                Для работы с Normalfaggotbot, необходимо:
+                <br />
+                1. Изначально добавить Normalfaggotbot на ваш дискорд сервер
+                <br />
+                2. Пригласить бота в голосовой чат, воспользовавшись командой
+                !join
+                <br />
+                3. Наслаждаться музыкой
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="body_block" id="scroll_commands">
+          <div class="about_block">
+            <div class="header_text">
+              <i class="fas fa-list"></i>
+              <p class="heading">Команды</p>
+            </div>
+            <div class="bottom_text">
+              <p>
+                Префикс для команд "!". Весь список команд !help:<br />
+                1. !join - Присоединение в голосовой чат<br />
+                2. !play - Запуск youtube клипа по ссылке<br />
+                3. !add_song - Добавление youtube клипа в очередь<br />
+                4. !pause - Приостановить youtube клип<br />
+                5. !resume - Возобновить youtube клип<br />
+                6. !skip - Пропустить youtube клип<br />
+                7. !disconnect - Отключения из голосового чата<br />
+              </p>
+            </div>
+          </div>
+          <div class="video">
+            <video
+              controls
+              autoplay
+              loop
+              muted
+              src="./static/video/banner_block_two.mp4"
+              type="video/mp4"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Нижняя часть сайта -->
+    <div class="background_bottom">
+  <div class="block_up">
+    <div class="about_one_up">
+      <p class="head">Normalfaggotbot</p>
+      <p class="text">
+        Обслуживает несколько серверов
+        <br />
+        <i class="fas fa-music"></i> Приятного прослушивания
+        <br />
+        <i class="fas fa-users-cog"></i> от
+        <a
+          href="https://github.com/sathelo"
+          title="Github Sathelo"
+          target="_blank"
+          >sathelo</a
+        >,
+        <a
+          href="https://github.com/TGSLPD"
+          title="Github TGSLPD"
+          target="_blank"
+          >TGSLPD</a
+        >,
+        <a
+          href="https://github.com/gudlayv"
+          title="Github gudlayv"
+          target="_blank"
+          >gudlayv</a
+        >
+      </p>
+    </div>
+
+    <div class="about_block_bottom">
+      <p class="head">Normalfaggotbot</p>
+      <a href="./#scroll_documentation">
+        <p class="text" title="Документация">Документация</p>
+      </a>
+      <a href="./#scroll_commands">
+        <p class="text" title="Команды">Команды</p>
+      </a>
+    </div>
+
+    <div class="about_block_bottom">
+      <p class="head">Ресурсы</p>
+      <a href="./contacts.html">
+        <p class="text" title="Контакты">Контакты</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="block_bottom">
+    <div class="text_bottom">
+      <p>
+        Является чем-то большим, чем просто ботом, наверное, в этом что-то есть
+        особенное
+      </p>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
