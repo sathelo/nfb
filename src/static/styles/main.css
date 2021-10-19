@@ -351,11 +351,19 @@ a {
 }
 
 .body .blocs_information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   width: 100%;
 }
 
 .body_block {
   position: relative;
+
+  width: 100%;
+  max-width: 1800px;
 }
 
 .body_block::after {
